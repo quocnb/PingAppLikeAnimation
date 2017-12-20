@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		7975B7821FE9E0D60039C476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975B7811FE9E0D60039C476 /* AppDelegate.swift */; };
-		7975B7841FE9E0D60039C476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975B7831FE9E0D60039C476 /* ViewController.swift */; };
-		7975B7871FE9E0D60039C476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7975B7851FE9E0D60039C476 /* Main.storyboard */; };
 		7975B7891FE9E0D60039C476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7975B7881FE9E0D60039C476 /* Assets.xcassets */; };
 		7975B78C1FE9E0D60039C476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7975B78A1FE9E0D60039C476 /* LaunchScreen.storyboard */; };
+		7975B7981FE9E4880039C476 /* WhiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975B7971FE9E4880039C476 /* WhiteViewController.swift */; };
+		7975B79A1FE9E4920039C476 /* BlackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975B7991FE9E4920039C476 /* BlackViewController.swift */; };
+		7975B79C1FE9E6150039C476 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975B79B1FE9E6150039C476 /* ColorViewController.swift */; };
+		7975B7BD1FEA20600039C476 /* TransitionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975B7BC1FEA20600039C476 /* TransitionCoordinator.swift */; };
+		7975B7BF1FEA21660039C476 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975B7BE1FEA21660039C476 /* CircularTransition.swift */; };
+		7975B7C21FEA27CE0039C476 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975B7C11FEA27CE0039C476 /* CGPointExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7975B77E1FE9E0D60039C476 /* PingLikelyAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingLikelyAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7975B7811FE9E0D60039C476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7975B7831FE9E0D60039C476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7975B7861FE9E0D60039C476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7975B7881FE9E0D60039C476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7975B78B1FE9E0D60039C476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7975B78D1FE9E0D60039C476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7975B7971FE9E4880039C476 /* WhiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteViewController.swift; sourceTree = "<group>"; };
+		7975B7991FE9E4920039C476 /* BlackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackViewController.swift; sourceTree = "<group>"; };
+		7975B79B1FE9E6150039C476 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		7975B7BC1FEA20600039C476 /* TransitionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionCoordinator.swift; sourceTree = "<group>"; };
+		7975B7BE1FEA21660039C476 /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		7975B7C11FEA27CE0039C476 /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				7975B7811FE9E0D60039C476 /* AppDelegate.swift */,
-				7975B7831FE9E0D60039C476 /* ViewController.swift */,
-				7975B7851FE9E0D60039C476 /* Main.storyboard */,
 				7975B7881FE9E0D60039C476 /* Assets.xcassets */,
 				7975B78A1FE9E0D60039C476 /* LaunchScreen.storyboard */,
 				7975B78D1FE9E0D60039C476 /* Info.plist */,
+				7975B7BB1FEA20240039C476 /* Controllers */,
+				7975B7C01FEA216D0039C476 /* AnimationHelper */,
+				7975B7C31FEA27D30039C476 /* Extensions */,
 			);
 			path = PingLikelyAnimation;
+			sourceTree = "<group>";
+		};
+		7975B7BB1FEA20240039C476 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7975B79B1FE9E6150039C476 /* ColorViewController.swift */,
+				7975B7971FE9E4880039C476 /* WhiteViewController.swift */,
+				7975B7991FE9E4920039C476 /* BlackViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7975B7C01FEA216D0039C476 /* AnimationHelper */ = {
+			isa = PBXGroup;
+			children = (
+				7975B7BC1FEA20600039C476 /* TransitionCoordinator.swift */,
+				7975B7BE1FEA21660039C476 /* CircularTransition.swift */,
+			);
+			path = AnimationHelper;
+			sourceTree = "<group>";
+		};
+		7975B7C31FEA27D30039C476 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7975B7C11FEA27CE0039C476 /* CGPointExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +161,6 @@
 			files = (
 				7975B78C1FE9E0D60039C476 /* LaunchScreen.storyboard in Resources */,
 				7975B7891FE9E0D60039C476 /* Assets.xcassets in Resources */,
-				7975B7871FE9E0D60039C476 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +171,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7975B7841FE9E0D60039C476 /* ViewController.swift in Sources */,
+				7975B7981FE9E4880039C476 /* WhiteViewController.swift in Sources */,
+				7975B7BF1FEA21660039C476 /* CircularTransition.swift in Sources */,
 				7975B7821FE9E0D60039C476 /* AppDelegate.swift in Sources */,
+				7975B79C1FE9E6150039C476 /* ColorViewController.swift in Sources */,
+				7975B7BD1FEA20600039C476 /* TransitionCoordinator.swift in Sources */,
+				7975B79A1FE9E4920039C476 /* BlackViewController.swift in Sources */,
+				7975B7C21FEA27CE0039C476 /* CGPointExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7975B7851FE9E0D60039C476 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7975B7861FE9E0D60039C476 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7975B78A1FE9E0D60039C476 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,6 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PingLikelyAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quocnb.PingLikelyAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PingLikelyAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quocnb.PingLikelyAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
